@@ -1,25 +1,29 @@
 import React from 'react';
 import styled from 'styled-components'
-import './style.css';
+import './loginStyle.css';
 
 const FormStyle = styled.div`
- border-color: black;
- border-style: solid;
- border-width: 2px;
- margin:auto;
- margin-top: 5px;
- width: 300px;
- padding: 25px;
- text-align: left;
+  width: 70%;
+  height: 40%;
+  margin-top: 15%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2%;
+  padding-left: 3%;
+  padding-right: 3%;
+  border-radius: 5px;
+  border: 1px solid #000000;
 `;
+
 
 class Login extends React.Component {
   render() {
     return (
         <FormStyle> 
           <form>
-            <label>Name: <input type="text" name="name" placeholder="User Name" /></label><br />
-            <label>Password: <input type="text" name="name" placeholder="***********"/></label><br />
+            <p>LOGIN</p><br />
+            <input type="text" name="name" placeholder="User Name" /><br />
+            <input type="text" name="name" placeholder="***********"/><br />
             <input type="submit" value="Submit" />
           </form>
         </FormStyle>
